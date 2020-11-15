@@ -51,3 +51,5 @@ std::vector<Person> InBinary:: reading(){
     personList.pop_back();
     return personList;
 }
+
+InBinary::InBinary() {}

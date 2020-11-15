@@ -14,9 +14,14 @@
 class InBinary: public IReadFrom, public ISaveFrom{
 
 private:
-    void saving (Person*person)override;
+public:
+    InBinary();
 
     void saving(std::vector<Person>)override;
+
+private:
+
+    void saving (Person*person)override;
 
     std::vector<Person> reading()override;
 
