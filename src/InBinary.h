@@ -5,8 +5,20 @@
 #ifndef LAB7_INBINARY_H
 #define LAB7_INBINARY_H
 
+#include <sstream>
+#include <fstream>
+#include "IReadFrom.h"
+#include "ISaveFrom.h"
+#include "Person.h"
 
-class InBinary {
+class InBinary: public IReadFrom, public ISaveFrom{
+
+private:
+    void saving (Person*person)override;
+
+    void saving(std::vector<Person>)override;
+
+    std::vector<Person> reading()override;
 
 };
 

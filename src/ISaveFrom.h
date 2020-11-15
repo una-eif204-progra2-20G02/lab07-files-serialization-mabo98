@@ -12,8 +12,8 @@ class ISaveFrom {
 
 public:
 
-    virtual void saving(Person*person)=0;
-    virtual void saving(std::vector<Persona>)=0;
+    virtual void saving(Person* person)=0;
+    virtual void saving(std::vector<Person>)=0;
     ~ISaveFrom();
 
 };
